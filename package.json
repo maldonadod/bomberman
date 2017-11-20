@@ -1,0 +1,24 @@
+{
+  "name": "bomberman",
+  "version": "0.0.1",
+  "description": "Bomberman Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maldonadod/bomberman.git"
+  },
+  "author": "maldonadod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maldonadod/bomberman/issues"
+  },
+  "homepage": "https://github.com/maldonadod/bomberman#readme",
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "jest": "^21.2.1",
+    "regenerator-runtime": "^0.11.0"
+  }
+}
