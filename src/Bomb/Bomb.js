@@ -4,7 +4,8 @@ const {
 } = require('./states')
 
 const ProtoBomb = {
-  state: BombDropedState
+  type: 'bomb'
+  ,state: null
   ,getState() {
     return this.state
   }
@@ -15,6 +16,16 @@ const ProtoBomb = {
     this.setState(BombExplodedState)
   }
 }
-const createBomb = () => Object.create(ProtoBomb)
+
+const createBomb = () => {
+
+  const bomb = Object.create(ProtoBomb)
+
+  Object.assign(bomb, {
+    state: BombDropedState
+  })
+
+  return bomb
+}
 
 module.exports = createBomb
